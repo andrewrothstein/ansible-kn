@@ -1,0 +1,26 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: downloading {{ kn_url }} to {{ kn_install_exe }}
+  become: true
+  become_user: root
+  get_url:
+    url: '{{ kn_url }}'
+    dest: '{{ kn_install_exe }}'
+    mode: 0755
+    checksum: '{{ kn_checksum }}'
+- name: linking {{ kn_link }} to {{ kn_install_exe }}
+  become: true
+  become_user: root
+  file:
+    src: '{{ kn_install_exe }}'
+    dest: '{{ kn_link }}'
+    state: link

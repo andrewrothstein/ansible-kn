@@ -1,0 +1,7 @@
+---
+# vars file for kn
+kn_platform: '{{ kn_os }}-{{ kn_arch }}'
+kn_url: '{{ kn_mirror }}/knative-v{{ kn_ver }}/kn-{{ kn_platform }}'
+kn_install_exe: '{{ kn_install_dir }}/kn-v{{ kn_ver }}-{{ kn_platform }}{{ kn_dotexe | default("") }}'
+kn_link: '{{ kn_install_dir }}/kn'
+kn_checksum: '{{ kn_checksums[kn_ver][kn_platform] }}'
