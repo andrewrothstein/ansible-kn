@@ -1,6 +1,6 @@
 ---
 # defaults file for kn
-kn_ver: 1.4.1
+kn_ver: 1.5.0
 kn_mirror: https://github.com/knative/client/releases/download
 kn_os: linux
 kn_arch: amd64
@@ -22,3 +22,19 @@ kn_checksums:
     linux-s390x: sha256:c33e95f50b2f9e7b9d86225331133c8d82cd1920164a4c7d947ac09d2975ec66
     # https://github.com/knative/client/releases/download/knative-v1.4.1/kn-windows-amd64
     windows-amd64: sha256:e837398f3d47183a815b93ddd61acc21f3c6307cf488b6a5aabef39b370b0ea8
+  # https://github.com/knative/client/releases/download/knative-v1.5.0/checksums.txt
+  '1.5.0':
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-darwin-amd64
+    darwin-amd64: sha256:4319b9b2a7f0faa3db97acb42a942b2346b115b3bc27b2d950bdf8b7d91311e4
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-darwin-arm64
+    darwin-arm64: sha256:7e4ef8856904ccfdd9f07530a313aeed8c5e0a58a03ef4f5ee6f8256679e134b
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-linux-amd64
+    linux-amd64: sha256:663af0337985c7a1ea9b339cc0c865dba05bdacbcb8453fd63057e680c921f46
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-linux-arm64
+    linux-arm64: sha256:942e39bb2e54379ce9119f8fbc0b3ac74a2cf1b5a09d4d3c064da076cefed41c
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-linux-ppc64le
+    linux-ppc64le: sha256:c693af28f9aa8b0a1d2a3c05a7bd2caa7131951e3e750a26f71f6adc9c4a3def
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-linux-s390x
+    linux-s390x: sha256:a850a4db13d33c65f9158c64b2efa062c3b00f24a7f1b5ec797d5e3f20eab184
+    # https://github.com/knative/client/releases/download/knative-v1.5.0/kn-windows-amd64
+    windows-amd64: sha256:3e687ff8698247ab139039e03a1412042d993fc7b33547c666d929c1560f5636
