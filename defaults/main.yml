@@ -2,8 +2,11 @@
 # defaults file for kn
 kn_ver: 1.7.0
 kn_mirror: https://github.com/knative/client/releases/download
-kn_os: linux
-kn_arch: amd64
+kn_arch_map:
+  aarch64: arm64
+  ppc64le: ppc64le
+  s390x: s390x
+  x86_64: amd64
 kn_install_dir: /usr/local/bin
 kn_checksums:
   # https://github.com/knative/client/releases/download/knative-v1.4.1/checksums.txt
